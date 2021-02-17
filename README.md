@@ -4,11 +4,23 @@
     ```
     - ansible all -m raw -a "show ip interface brief" -u admin -k -i 10.10.10.10,
     ```
-- ssh tunnel
+- ssh
+    - key based authentication via jump host
+    ```
+    ssh –A admin@jumphost
+    ssh targethost
+    ```
+    - tunnel
     ```
     ssh -L 4433:10.10.10.10:443 jump_host
     ```
-- git rebase
+- git
+    - delete multiple branches
+    ```
+    git branch | grep 'keyword' | xargs git branch -d
+    ```
+
+    - rebase
     ```
     git checkout your-branch
     git fetch origin master # fetch remote master refs and save it to origin/master

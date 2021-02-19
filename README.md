@@ -1,4 +1,8 @@
 ## Cheat Sheet
+- Linux
+    |command|description|
+    |---|---|
+    |reset or echo -e \\033c|resize the terminal window back to normal after garbage on the screen or screen shrinked in half|
 
 - ansible adhoc commands
     ```

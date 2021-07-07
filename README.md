@@ -8,6 +8,16 @@
     ```
     - ansible all -m raw -a "show ip interface brief" -u admin -k -i 10.10.10.10,
     ```
+- ansible packaging gotcha
+    ```
+    - Ansible <= 2.x
+        - 2.x (only single version ansible)
+    - Ansible 3.x
+        - community package(3.x) + ansible-base(>=2.10.6,<2.11)
+    - Ansible 4.x
+        - community package(4.x) + ansible-core(>=2.11,<2.12)
+    Note: 2.11 is when ansible-base is renamed to ansible-core.
+    ```
 - ssh
     - key based authentication via jump host
     ```
@@ -48,6 +58,7 @@
     ```
 - netstat
     ```
+    sudo netstat -tulpn
     netstat -van | grep 'pid\|3000'
     ```
 - aws vpc cloudwatch logs format

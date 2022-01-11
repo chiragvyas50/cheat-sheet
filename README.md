@@ -3,6 +3,7 @@
     |command|description|
     |---|---|
     |reset or printf '\033c' or echo -e \\\\033c|resize the terminal window back to normal after garbage on the screen or screen shrinked in half|
+    |replace string in multiple file|grep -RiIl 'master' . \| xargs sed -i "" -e 's/master/primary/I'
 
 - ansible adhoc commands
     ```

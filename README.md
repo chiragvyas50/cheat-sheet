@@ -1,10 +1,10 @@
 ## Cheat Sheet
 - Terminal Setup
-    - Install oh-my-zsh: 
+    - Install oh-my-zsh
         ```
         curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
         ```
-    - Edit `.zshrc` : 
+    - Edit `.zshrc`
         ```
         plugins=(
             git
@@ -20,13 +20,13 @@
         # autosuggest accept key
         bindkey '^ ' autosuggest-accept
         ```
-    - Enable shorten directory path
+    - Enable shorten directory path(Optional: Don't bother about this step if you are going to use Powerlevel9/10k)
         - `cp .oh-my-zsh/themes/robbyrussell.zsh-theme .oh-my-zsh/custom/themes/robbyrussell_custome.zsh-theme`
         - open `.oh-my-zsh/custom/themes/robbyrussell_custome.zsh-theme` and replace `%c --> %~` on second line
         - `exec $SHELL` 
-    - Setup Powerlevel10K(Optional):
+    - Setup Powerlevel10K(Optional)
         - Install: `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
-        - Configure: `p10k configure/exec $SHELL`
+        - Configure: `p10k configure OR exec $SHELL`
 - Linux
     |command|description|
     |---|---|

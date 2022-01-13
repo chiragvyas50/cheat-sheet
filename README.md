@@ -1,4 +1,28 @@
 ## Cheat Sheet
+- Terminal Setup
+    - Install oh-my-zsh: 
+        ```
+        curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+        ```
+    - Edit `.zshrc` : 
+        ```
+        plugins=(
+            git
+            iterm2
+            man
+            python
+            zsh-syntax-highlighting
+            zsh-autosuggestions
+        )
+        # set autosuggest color
+        ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
+        
+        # autosuggest accept key
+        bindkey '^ ' autosuggest-accept
+        ```
+    - Setup Powerlevel10K(Optional):
+        - Install: `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
+        - Configure: `p10k configure/exec $SHELL`
 - Linux
     |command|description|
     |---|---|

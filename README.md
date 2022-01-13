@@ -20,6 +20,10 @@
         # autosuggest accept key
         bindkey '^ ' autosuggest-accept
         ```
+    - Enable shorten directory path
+        - `cp .oh-my-zsh/themes/robbyrussell.zsh-theme .oh-my-zsh/custom/themes/robbyrussell_custome.zsh-theme`
+        - open `.oh-my-zsh/custom/themes/robbyrussell_custome.zsh-theme` and replace `%c --> %~` on second line
+        - `exec $SHELL` 
     - Setup Powerlevel10K(Optional):
         - Install: `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
         - Configure: `p10k configure/exec $SHELL`

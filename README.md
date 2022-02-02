@@ -11,6 +11,7 @@
         ```
     - Edit `.zshrc`
         ```
+        ZSH_THEME="robbyrussell_custome"
         plugins=(
             git
             iterm2

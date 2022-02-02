@@ -21,7 +21,6 @@
         )
         # set autosuggest color
         ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
-        
         # autosuggest accept key
         bindkey '^ ' autosuggest-accept
         ```

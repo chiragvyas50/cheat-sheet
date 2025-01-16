@@ -9,9 +9,12 @@
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
         git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
         ```
+    - Setup Powerlevel10K(Optional)
+        - Install: `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
+        - Configure: `p10k configure OR exec $SHELL`
     - Edit `.zshrc`
         ```
-        ZSH_THEME="robbyrussell_custome"
+        ZSH_THEME="powerlevel10k/powerlevel10k"
         plugins=(
             git
             iterm2
@@ -25,13 +28,8 @@
         # autosuggest accept key
         bindkey '^ ' autosuggest-accept
         ```
-    - Enable shorten directory path(Optional: Don't bother about this step if you are going to use Powerlevel9/10k)
-        - `cp .oh-my-zsh/themes/robbyrussell.zsh-theme .oh-my-zsh/custom/themes/robbyrussell_custome.zsh-theme`
-        - open `.oh-my-zsh/custom/themes/robbyrussell_custome.zsh-theme` and replace `%c --> %~` on second line
-        - `exec $SHELL` 
-    - Setup Powerlevel10K(Optional)
-        - Install: `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
-        - Configure: `p10k configure OR exec $SHELL`
+    - Enable word jumps and word deletion, aka natural text selection
+        - By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to "iTerm → Preferences → Profiles → Keys → Key mappings → Presets... → Natural Text Editing → Boom!"
 - Linux
     |command|description|
     |---|---|

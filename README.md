@@ -67,6 +67,13 @@
     git branch | grep 'keyword' | xargs git branch -d
     ```
 
+    - create branch & PR
+    ```
+    git checkout foo
+    git add -u
+    git commit -m "msg foo"
+    git push origin foo --set-upstream
+    
     - rebase
     ```
     git checkout your-branch
